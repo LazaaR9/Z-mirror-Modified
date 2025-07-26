@@ -439,7 +439,6 @@ def new_thread(func):
     return wrapper
 
 
-
 async def set_commands(client):
     if config_dict['SET_COMMANDS']:
         await client.set_bot_commands([
