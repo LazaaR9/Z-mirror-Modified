@@ -456,5 +456,6 @@ async def set_commands(client):
             BotCommand(f'{BotCommands.BotSetCommand}', 'Bot Settings '),
             BotCommand(f'{BotCommands.UserSetCommand}', 'Users settings'),
             BotCommand(f'{BotCommands.HelpCommand}', 'Get detailed help'),
+            BotCommand(f'{BotCommands.RestartCommand}', 'Restart Bot'),
         ])
 
