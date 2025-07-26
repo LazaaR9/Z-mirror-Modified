@@ -439,6 +439,7 @@ def new_thread(func):
     return wrapper
 
 
+
 async def set_commands(client):
     if config_dict['SET_COMMANDS']:
         await client.set_bot_commands([
@@ -451,11 +452,8 @@ async def set_commands(client):
             BotCommand(f'{BotCommands.CategorySelect}', 'Select category to upload only mirror'),
             BotCommand(f'{BotCommands.CancelMirror}', 'Cancel a Task'),
             BotCommand(f'{BotCommands.CancelAllCommand[0]}', f'Cancel all tasks which added by you or {BotCommands.CancelAllCommand[1]} to in bots.'),
-            BotCommand(f'{BotCommands.LogCommand}', 'Check Log info ):'),
             BotCommand(f'{BotCommands.SearchCommand}', 'Search in Torrent'),
-            BotCommand(f'{BotCommands.BotSetCommand}', 'Bot Settings '),
             BotCommand(f'{BotCommands.UserSetCommand}', 'Users settings'),
-            BotCommand(f'{BotCommands.HelpCommand}', 'Get detailed help'),
-            BotCommand(f'{BotCommands.RestartCommand}', 'Restart Bot'),
+            BotCommand(f'{BotCommands.HelpCommand}', 'Get detailed help'), 
         ])
 
